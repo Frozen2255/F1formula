@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/driver_popup_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/driver_popup_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#947ADC"
+                android:text="Position"
+                android:textColor="#FDF6FE" />
+
+            <TextView
+                android:id="@+id/driver_popup_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C6B8E9"
+                android:text="First Name"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/driver_popup_Surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#947ADC"
+                android:text="Surname"
+                android:textColor="#FDF6FE" />
+
+            <TextView
+                android:id="@+id/driver_popup_Points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C6B8E9"
+                android:text="Points"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/driver_popup_wins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#947ADC"
+                android:text="Wins"
+                android:textColor="#FDF6FE" />
+
+            <TextView
+                android:id="@+id/driver_popup_Nationality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C6B8E9"
+                android:text="Nationality"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/driver_popup_DOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#947ADC"
+                android:text="Date of birth"
+                android:textColor="#FDF6FE" />
+
+            <TextView
+                android:id="@+id/driver_popup_Constructor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C6B8E9"
+                android:text="Constructor"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

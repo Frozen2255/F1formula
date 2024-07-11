@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MPD XML Starter code - main diet 2023-2024 -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/last_data_pull_display"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#C6B8E9"
+            android:text="Auto Data Pull: "
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/salutation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to F1 Formula data app"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/acknowledgement"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Contains Ergast data from public REST API "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/driver_standing_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Driver Standing :"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/driver_standing_data_pull"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#C6B8E9"
+            android:text="Driver Standing Data Pull: "
+            android:textColor="#000000"
+            android:textSize="20sp"  />
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Press to get Driver Standing data" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:id="@+id/driver_standing_table"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="#957ADD"
+                        android:gravity="center"
+                        android:paddingRight="30dp"
+                        android:text="Position"
+                        android:textAlignment="center"
+                        android:textColor="#FEFEFE" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#C7B9EA"
+                        android:paddingRight="30dp"
+                        android:text="First Name"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#947ADC"
+                        android:paddingRight="30dp"
+                        android:text="Surname"
+                        android:textColor="#E8E3F7" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#C6B8E9"
+                        android:paddingRight="30dp"
+                        android:text="Points"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#947ADC"
+                        android:paddingRight="30dp"
+                        android:text="Wins"
+                        android:textColor="#E8E3F7" />
+                </TableRow>
+
+            </TableLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/RaceSchedule"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Race Schedule :"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/race_schedule_data_pull"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#C6B8E9"
+            android:text="Race Schedule Data Pull: "
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/raceScheduleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Press to get Race Schedule data" />
+
+        <Spinner
+            android:id="@+id/season_dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/seasons" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:id="@+id/race_schedule_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/round"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#C7B9EA"
+                        android:paddingRight="30dp"
+                        android:text="Round"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/RaceName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#947ADC"
+                        android:paddingRight="30dp"
+                        android:text="Race Name"
+                        android:textColor="#E8E3F7" />
+
+                    <TextView
+                        android:id="@+id/Date"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#C7B9EA"
+                        android:paddingRight="30dp"
+                        android:text="Date"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#947ADC"
+                        android:paddingRight="30dp"
+                        android:text="Time"
+                        android:textColor="#E8E3F7" />
+
+                    <TextView
+                        android:id="@+id/circuit"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#C7B9EA"
+                        android:paddingRight="30dp"
+                        android:text="Circuit"
+                        android:textColor="#000000" />
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</ScrollView>
